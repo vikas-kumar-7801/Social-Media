@@ -1,0 +1,30 @@
+.profileContainer{
+  display: flex;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+.profile{
+  height: 45px;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.profileNameConatiner{
+  display: flex;
+  flex-direction: column;
+  line-height: 0.1;
+  margin: 0;
+  padding: 0;
+}
+
+.contentImg{
+  max-width: 100%;
+  height: auto;
+}
+
+.hashtag{
+  font-weight: 400;
+}

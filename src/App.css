@@ -1,0 +1,59 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #f2f4f7;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.app-container {
+  display: flex;
+}
+
+.content {
+  margin-top: 55px;
+  margin-left: 80px;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.post-card {
+  margin: 20px 50px;
+  border-radius: 10px;
+}
+
+.create-post {
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 10%;
+}
+
+.welcome-message {
+  margin: 100px 0;
+}
+
+.spinner {
+  margin: 10% 0;
+}
+
+.reactions {
+  float: right;
+  margin-left: 5px;
+}
+
+.deleteButton {
+  position: absolute;
+  top: -5px;
+  left: 560px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  color: red !important;
+  scale: 1.3;
+}
