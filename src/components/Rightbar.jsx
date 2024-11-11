@@ -21,7 +21,7 @@ const Rightbar = ({ selectedTab, setSelectedTab }) => {
               className={`nav-link text-black`}
               aria-current="page">
               <span className="bi pe-none me-2" width="16" height="16">
-                <img src={item.imageUrl} alt="Image" className={`${styles.profileImage}`} loading="lazy" />
+                <img src={item.imageUrl} alt="Image" className={`${styles.profileImage}`}  />
               </span>
               {item.name}
             </a>
