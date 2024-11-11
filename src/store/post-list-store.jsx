@@ -7,7 +7,25 @@ export const PostListContext = createContext({
   deletePost: () => {},
   fetching: false,
   IMAGE_URLS: [],
+  profileName: [],
 });
+
+const profileName = [
+  "Oliver Smith",
+  "Emma Johnson",
+  "Liam Williams",
+  "Sophia Brown",
+  "Noah Jones",
+  "Ava Garcia",
+  "Elijah Miller",
+  "Isabella Davis",
+  "James Martinez",
+  "Mia Rodriguez",
+  "Benjamin Hernandez",
+  "Amelia Lopez",
+  "Lucas Gonzalez",
+  "Charlotte Wilson",
+];
 
 const IMAGE_URLS = [
   "https://picsum.photos/1920/1080",
@@ -39,13 +57,12 @@ const IMAGE_URLS = [
   "https://picsum.photos/1946/1106",
   "https://picsum.photos/1947/1107",
   "https://picsum.photos/1948/1108",
-  "https://picsum.photos/1949/1109"
+  "https://picsum.photos/1949/1109",
 ];
-
 
 const imageMergeApi = (allPosts) => {
   for (let i = 0; i < allPosts.length; i++) {
-    Object.assign(allPosts[i], { image: `${IMAGE_URLS[i]}` })
+    Object.assign(allPosts[i], { image: `${IMAGE_URLS[i]}` });
   }
   return allPosts;
 };
@@ -139,6 +156,7 @@ const PostListProvider = ({ children }) => {
         deletePost,
         fetching,
         IMAGE_URLS,
+        profileName,
       }}>
       {children}
     </PostListContext.Provider>

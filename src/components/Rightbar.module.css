@@ -1,0 +1,12 @@
+
+.Rightbar{
+  min-width: 355px;
+  max-height: 80vh;
+  padding:60px 10px;
+}
+
+.profileImage{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}

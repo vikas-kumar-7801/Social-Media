@@ -28,7 +28,7 @@ body {
 
 .create-post {
   width: 80%;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 10%;
 }
 
@@ -38,6 +38,12 @@ body {
 
 .spinner {
   margin: 10% 0;
+}
+
+.spinner2 {
+  margin: 10% 0;
+  position: relative;
+  right: 170px;
 }
 
 .reactions {

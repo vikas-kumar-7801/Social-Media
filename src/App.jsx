@@ -6,12 +6,11 @@ import Leftbar from "./components/Leftbar";
 import CreatePost from "./components/CreatePost";
 import PostList from "./components/PostList";
 import { useState } from "react";
-import PostListProvider from "./store/post-list-store";
+import PostListProvider, { PostListContext } from "./store/post-list-store";
+import Rightbar from "./components/Rightbar";
 
 function App() {
   const [selectedTab, setSelectedTab] = useState("Home");
-
-
 
   return (
     <PostListProvider>
@@ -23,9 +22,9 @@ function App() {
         <div className="content">
           {selectedTab === "Home" ? <PostList /> : <CreatePost />}
         </div>
+        <Rightbar/>
       </div>
-      <Footer></Footer>
-      <Footer></Footer>
+      {selectedTab === "Create Post" ? <Footer /> : ""}
     </PostListProvider>
   );
 }
