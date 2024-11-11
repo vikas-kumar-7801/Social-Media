@@ -37,6 +37,7 @@ const Post = ({ post }) => {
           src={post.image}
           alt=""
           className={`${style.contentImg}`}
+          loading="lazy" 
         />
         <br />
         <br />
